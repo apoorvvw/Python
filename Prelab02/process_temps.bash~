@@ -1,0 +1,39 @@
+#! /bin/bash
+#
+# $Author: ee364e10 $
+# $Date: 2015-01-26 23:56:29 -0500 (Mon, 26 Jan 2015) $ 
+# $HeadUrl$ 
+# $Revision: 74138 $
+Num_param=$#
+param_values=$@
+if (( $# != 1 ))
+then
+    echo "usage: process_temps.bash  <input_file>"
+    exit 1
+fi
+if [[ ! -r $1 ]]
+then
+    echo "Error: $1 is not a readable file."
+    exit 2
+fi
+count=0
+while read -a line
+do
+    ((length=${#line[*]}-1))
+    sum=0
+    if (( count > 0 ))
+    then
+    for I in ${line[*]}
+    do
+        if [[ $I = ${line[*]} ]]
+        then
+            continue 
+        fi  
+        (( sum=$sum+$I ))
+       done       
+       ((avg=$sum/$length))
+       echo "Average temperature for time ${line[0]} was $avg C. "
+    fi
+    (( count=$count+1 ))
+done < $1
+exit 0

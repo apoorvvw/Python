@@ -1,0 +1,38 @@
+#! /bin/bash
+#
+# $Author$
+# $Date$ 
+# $HeadUrl$ 
+# $Revision$
+number_params=$#
+input="file_list"
+while read line
+do
+  echo "Reading $line"
+  svnStatus=$(svn status $line)
+  if [[ $svnStatus == ?* ]]
+  then   
+    if [[ -e $line ]]
+    then
+	if [[ -x $line ]]
+	then
+	  echo "Do you want to make the file executable? (y/n)"
+	  read answer
+	  if (( answer == "y" ))
+	  then
+	    chmod +x $line
+	  fi
+	fi
+	svn add $line
+    else
+	echo "File does not exist"
+    fi
+  elif [[ $svnStatus != ?* ]]
+  then
+    if [[ ! -x $line ]]
+    then
+      svn propset svn:executable ON $line
+    fi
+  fi
+done <"$input"
+svn commit -m "auto commiting code"

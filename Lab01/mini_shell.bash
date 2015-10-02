@@ -1,0 +1,46 @@
+#! /bin/bash
+#
+# $Author: ee364e10 $
+# $Date: 2015-01-21 10:31:29 -0500 (Wed, 21 Jan 2015) $ 
+# $HeadUrl$ 
+# $Revision: 73312 $
+read -p 'Enter a command: ' command
+Num_Of_Params=$#
+flag=0
+if [[ $command != 'quit' ]]
+  then 
+    flag=1 
+fi
+while (( flag == 1 ))
+do
+if [[ $command == 'hello' ]]
+then 
+    echo Hello $(whoami)
+elif [[ $command == 'compile' ]]
+then 
+    read -p 'Enter filename: ' file_name
+    if [[ -r $file_name ]]
+    then 
+	gcc -Wall -Wshadow $file_name
+	if (( $? == 0 ))
+	then
+	  echo 'Compilation succeeded'
+	else 
+	  echo 'Compilation failed'
+	fi
+    else
+	echo 'Not readable'
+    fi
+elif [[ $command == 'quit' ]]
+then 
+    echo 'Exiting...'
+    exit 0
+else
+    echo 'Unrecognized input'
+fi
+read -p 'Enter a command: ' command
+if [[ $command != 'quit' ]]
+  then 
+    flag=1 
+fi
+done

@@ -1,0 +1,24 @@
+#! /bin/bash
+#
+# $Author$
+# $Date$ 
+# $HeadUrl$ 
+# $Revision$
+if (( $# != 2 ))
+then
+    echo "usage: sesor_sum.sh <file_name>"
+   exit 0
+fi
+if [[ -e $2 ]]
+then
+    read -p "$2 exists. Would you like to delete it? (y/n)" ans
+    if (( (ans == y) || ans == yes ))
+    then
+        rm $2
+    	read -p "Enter new file name: " name
+	touch name
+    else
+	echo "Hello sir" >> $2
+    fi
+fi
+exit 0

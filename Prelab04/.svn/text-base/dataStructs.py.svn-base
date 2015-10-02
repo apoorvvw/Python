@@ -1,0 +1,37 @@
+#!#!/usr/local/bin/python3.4
+# __author__ = 'ee364e10'
+"""
+PreLab0 for ECE 364:
+"""
+import glob
+
+def getWordFrequency():
+    files = glob.glob('/home/ecegrid/a/ee364e10/ee364e10/Prelab04/files/*.txt')
+    dict={}
+    for f in files:
+        with open(f,"r") as inputFile:
+            for line in inputFile:
+                for word in line.split():
+                    if word in dict:
+                        dict[word] = dict[word] + 1
+                    elif word not in dict:
+                        dict[word] = 1
+    return dict
+
+def getDuplicates():
+
+    return
+
+def getPurchaseReport():
+    files = glob.glob('/home/ecegrid/a/ee364e10/ee364e10/Prelab04/purchases/*.txt')
+    dict={}
+    with open(files) as f:
+        
+    return s
+if __name__ == "__main__":
+    dixt = getWordFrequency()
+    print(dixt.items())
+
+
+
+

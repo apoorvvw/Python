@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.4.1 (/usr/local/bin/python3.4)" project-jdk-type="Python SDK" />
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$/../Lab06">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Lab06" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Lab07">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Lab07" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Lab08">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Lab08" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Lab09">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Lab09" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Lab10">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Lab10" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Lab11">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Lab11" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Prelab03">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Prelab03" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Prelab06" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Prelab07">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn+ssh://ecegrid-thin1/home/ecegrid/a/ece364sv/svn/S15/students/ee364e10/Prelab07" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

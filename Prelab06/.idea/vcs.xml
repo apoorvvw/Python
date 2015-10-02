@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../Lab07" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../Lab08" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../Lab09" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../Lab10" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../Lab11" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../Prelab03" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../Prelab07" vcs="svn" />
+  </component>
+</project>
